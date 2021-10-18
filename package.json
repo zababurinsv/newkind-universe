@@ -6,7 +6,7 @@
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "type": "module",
-  "description": "peer to peer connect",
+  "description": "elite newKind games",
   "license": "GPL-3.0-only",
   "targets": {
     "main": false,
