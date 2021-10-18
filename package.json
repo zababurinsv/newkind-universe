@@ -1,0 +1,51 @@
+{
+  "name": "@newkind/universe",
+  "author": "Zababurin Sergey",
+  "version": "0.1.0",
+  "source": "./frontend/src/index.mjs",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "type": "module",
+  "description": "peer to peer connect",
+  "license": "GPL-3.0-only",
+  "targets": {
+    "main": false,
+    "module": {
+      "includeNodeModules": true,
+      "optimize": true
+    },
+    "docs": {
+      "source": "./frontend/src/index.html"
+    }
+  },
+  "config": {
+    "html": "./frontend/src/index.html",
+    "mjs": "./frontend/src/index.mjs",
+    "port": 6999
+  },
+  "scripts": {
+    "dev": "parcel $npm_package_config_html --port $npm_package_config_port --cache-dir ./.parcel-cache  --no-source-maps --dist-dir ./docs ",
+    "build:html": "parcel build --target docs --no-source-maps --dist-dir ./docs ",
+    "build": "parcel build $npm_package_config_mjs --no-source-maps --dist-dir ./dist ",
+    "kill": "kill $(lsof -t -i:$npm_package_config_port)",
+    "clean:parcel": "find . -name \".parcel-cache\" -exec rm -rf '{}' +; "
+  },
+  "devDependencies": {
+    "parcel": "2.0.0-rc.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zababurinsv/newkind-universe.git"
+  },
+  "keywords": [
+    "peer",
+    "connection"
+  ],
+  "bugs": {
+    "url": "https://github.com/zababurinsv/newkind-universe/issues"
+  },
+  "homepage": "https://github.com/zababurinsv/newkind-universe#readme",
+  "dependencies": {
+    "@newkind/universe": "^0.1.0"
+  }
+}
