@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/zababurinsv/server-signal.git",
-  "author": "szababurin <s.zababurin.v@gmail.com>",
+  "author": "Zababurin Sergey <zababurins@vk.com>",
   "license": "Apache 2",
   "type": "module",
   "private": true,
