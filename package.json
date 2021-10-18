@@ -1,7 +1,7 @@
 {
   "name": "@newkind/universe",
   "author": "Zababurin Sergey",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "source": "./frontend/src/index.mjs",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -44,8 +44,5 @@
   "bugs": {
     "url": "https://github.com/zababurinsv/newkind-universe/issues"
   },
-  "homepage": "https://github.com/zababurinsv/newkind-universe#readme",
-  "dependencies": {
-    "@newkind/universe": "^0.1.0"
-  }
+  "homepage": "https://github.com/zababurinsv/newkind-universe#readme"
 }
