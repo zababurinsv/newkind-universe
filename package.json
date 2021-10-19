@@ -21,7 +21,7 @@
   "config": {
     "html": "./frontend/src/index.html",
     "mjs": "./frontend/src/index.mjs",
-    "port": 6999
+    "port": 8537
   },
   "scripts": {
     "dev": "parcel $npm_package_config_html --port $npm_package_config_port --cache-dir ./.parcel-cache  --no-source-maps --dist-dir ./docs ",
