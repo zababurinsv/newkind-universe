@@ -1,9 +1,9 @@
 import events from "@newkind/events";
 import {IDBFS} from '@newkind/fs'
-import isEmpty from './modules/isEmpty/isEmpty.mjs'
+import IsEmpty from './modules/isEmpty/isEmpty.mjs'
 export default () => {
     return new Promise(async (resolve, reject) => {
-        let isEmpty = isEmpty
+        let isEmpty = IsEmpty
         let self = {
             import: (path = '') => {
                 return new Promise(async (resolve, reject) => {

@@ -28,7 +28,8 @@
     "build:html": "parcel build --target docs --no-source-maps --dist-dir ./docs ",
     "build": "parcel build $npm_package_config_mjs --no-source-maps --dist-dir ./dist ",
     "kill": "kill $(lsof -t -i:$npm_package_config_port)",
-    "clean:parcel": "find . -name \".parcel-cache\" -exec rm -rf '{}' +; "
+    "clean:parcel": "find . -name \".parcel-cache\" -exec rm -rf '{}' +; ",
+    "clean": "rimraf ./docs/* && rimraf ./dist/*"
   },
   "devDependencies": {
     "parcel": "2.0.0-rc.0"
