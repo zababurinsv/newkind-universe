@@ -39,7 +39,7 @@ export default () => {
                     canvas: undefined,
                     onerror: undefined,
                     element: undefined,
-                    wasmBinary: undefined
+                    wasmBinary: false
                 },  {
                     get: (obj, prop) => {
                         if(self.is.debug) {
@@ -104,7 +104,7 @@ export default () => {
                     try {
                         if(self.is.ready) {
                             let Module = {
-                                wasmBinary: false,
+                                wasmBinary: self.data.wasmBinary,
                                 locateFile: function () {
 
                                 },
