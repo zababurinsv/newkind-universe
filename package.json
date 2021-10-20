@@ -1,7 +1,7 @@
 {
   "name": "@newkind/universe",
   "author": "Zababurin Sergey",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "source": "./frontend/src/index.mjs",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
