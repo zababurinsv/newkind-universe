@@ -25,7 +25,7 @@ export default () => {
                         self.data.spinner = win.document.getElementById('spinner');
                         self.data.element = win.document.getElementById('output');
                         self.data.canvas = win.document.getElementById('canvas');
-                        self.data.onerror = win.onerror
+                        self.data.onerror = win.onerror = () => {}
                     } else {
 
                     }
@@ -62,7 +62,7 @@ export default () => {
                         let ready = true
                         for(let key in self.data) {
                             if(self.is.strict) {
-                                if(isEmpty(self.data[key])) {
+                                if(isEmpty(self.is[key])) {
                                     ready = false
                                     break
                                 }

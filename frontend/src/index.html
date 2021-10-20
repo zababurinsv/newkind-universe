@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Wasm Module Shell</title>
+    <title>Loader</title>
     <style>
         header {
             display: flex;
@@ -152,9 +152,11 @@
 </body>
 <script type="module">
     import Universe from './index.mjs'
+    import wasmBinary from './modules/newkind/wasmBinary.mjs'
     (async () => {
         let universe = await Universe()
-        universe.is.strict = false
+        universe.is.strict = true
+        universe.data.wasmBinary = wasmBinary
         await universe.dom(window)
         let Module = await universe.init()
         console.log(universe)
